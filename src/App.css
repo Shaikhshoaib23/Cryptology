@@ -1,10 +1,10 @@
 :root{
-    --text-primary:#000;
-    --bgPrimary:#fff;
-   --bgSecondary: #F9F9F9;
-   --pink: #0071bd;
-   --light-blue: #e6f7ff;
-   --border: #d9d9d9;
+    --text-primary:rgb(0, 0, 0);
+    --bgPrimary:rgba(43, 81, 139, 0.562);
+   --bgSecondary: #0d5f80;
+   --pink: rgb(163, 138, 231);
+   --light-blue: #0d5f80;
+   --border: #0d5f80;
 }
 
 * {
@@ -24,12 +24,13 @@ a:hover{
 
 .navbar{
     flex: 0.2;
-    background-color: rgb(0, 21, 41);
+    background-color: rgb(38, 25, 75);
 }
 
 .main{
     flex: 0.8;
     width: 100%;
+    background-color: rgb(38, 25, 75);
     
 }
 .routes{
@@ -41,13 +42,13 @@ a:hover{
     margin: 10px;
     height: 100vh;
     margin: 0px;
-    background-color: rgb(0, 21, 41);
-}
+   background-color:rgb(38, 25, 75);
+}   
 
 .logo-container{
-    background-color: #001529;
+    background-color: rgb(38, 25, 75);
     display: flex;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     width: 100%;
 }
@@ -55,7 +56,7 @@ a:hover{
     margin:0 0 0 15px;
 }
 .logo a{
-   color: white;
+   color: rgb(38, 25, 75);
 }
 .menu-control-container{
     display: none !important;
@@ -63,8 +64,12 @@ a:hover{
     right: 10px !important;
     top: 25px !important;
     font-size: 1.2rem !important;
-    background-color: var(--bgSecondary) !important;
+    background-color: rgb(38, 25, 75);
     border: none !important;
+}
+
+.bm-menu{
+    background-color:rgb(38, 25, 75);
 }
 
 .loader{
@@ -185,7 +190,7 @@ a:hover{
     border-bottom: 1px solid var(--border);
     font-size: 1rem;
     opacity: 0.9;
-    padding: 20px;
+    padding: 15px;
 
 }
 
@@ -287,6 +292,15 @@ a:hover{
     }
 }
 
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
 .select-news{
     width: 180px;
 }
@@ -321,7 +335,7 @@ width: 70%;
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    color: #0071bd;
+    color: rgb(96, 70, 168);
 }
 .chart-title{
     color: #0071bd !important;
@@ -353,26 +367,41 @@ width: 70%;
 }
 .search-crypto{
     margin: 20px auto 30px auto;
-    width: 250px;
+    width: 450px;
 }
 .crypto-card-container{
-    min-height: 65vh !important;
+    min-height: 90vh !important;
 }
 .crypto-card{
-    min-width: 250px;
-}
+    min-width: 300px;
+    
+}    
 .crypto-card .crypto-image{
-    width:35px;
+    width:65px;
+    border:2px solid rgb(116, 110, 110);
+  -moz-box-shadow: 10px 10px 5px rgb(88, 155, 182);
+  -webkit-box-shadow: 10px 10px 5px rgb(77, 204, 198);
+  box-shadow: 10px 10px 5px rgb(161, 129, 219);
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  border-radius:25px;
+  animation: rotation 3s infinite linear;
+ 
 }
+
 .select-timeperiod{
     width: 200px !important;
     margin-top: 20px !important;
 }
 
 .footer {
-    background-color: #001529;
+    background-color: rgb(70, 49, 126);
     display: flex;
     flex-direction: column;
     padding: 20px;
     align-items: center;
+    text-shadow: 8px 8px 8px rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 20px;
+    white-space: nowrap;
 }
