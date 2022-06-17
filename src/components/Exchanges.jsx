@@ -1,10 +1,17 @@
-import React from 'react'
+import React from 'react';
+import millify from 'millify';
+import { Collapse, Row, Col, Typography, Avatar } from 'antd';
+import HTMLReactParser from 'html-react-parser';
 
-const Exchanges = () => 
-     (
-        <div>
-           Exchanges
-        </div>
-    )
 
-    export default Exchanges
+const Exchanges = () => {
+  
+
+  return (
+    <>
+      
+    </>
+  );
+};
+
+export default Exchanges;
